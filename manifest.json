@@ -1,0 +1,21 @@
+{
+  "name": "Utaformatix",
+  "version": "3.6.3.0",
+  "manifest_version": 2,
+  "description": "A chromium extension for converting projects among singing voice synthesizer softwares.",
+  "browser_action": {
+    "default_title": "Utaformatix"
+  },
+
+  "offline_enabled": true,
+  "optional_permissions": [ "webNavigation"],
+  "options_ui": {
+    "chrome_style": true,
+    "open_in_tab": true,
+    "page": "data/options/index.html"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": ["common.js" ]
+  }
+}
